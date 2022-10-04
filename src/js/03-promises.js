@@ -31,7 +31,7 @@ function submitCreatePromises(evt) {
         );
       })
       .catch(({ position, delay }) => {
-        Notiflix.Notify.warning(
+        Notiflix.Notify.failure(
           `❌ Rejected promise ${position} in ${delay}ms`
         );
       });
